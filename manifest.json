@@ -1,0 +1,20 @@
+{
+  "manifest_version": 1,
+  "name": "Smart Task Button",
+  "description": "Un solo botón inteligente para mover tarjetas entre To Do, In Progress y Review.",
+  "permissions": ["card", "board", "list"],
+  "capabilities": {
+    "card-buttons": [
+      {
+        "text": "Start/Finish Task",
+        "callback": "card-buttons"
+      }
+    ]
+  },
+  "connectors": {
+    "iframe": {
+      "url": "https://TU_DOMINIO.github.io/TU_REPO/index.html",
+      "height": 80
+    }
+  }
+}
